@@ -112,7 +112,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "../ideo/node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "scripts": []
           }

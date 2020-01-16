@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="">
+        <h3 class="d-inline text-warning rounded bordered ">Breed Name</h3>
+        
+        <small class="d-inline float-right mr-3 text-warning">goto Detail</small>
+        <hr>
+    </div>
+    <div class="card w-100 p-0 mt-2 text-mute " *ngFor="let breed of sliceA" (click)="GotoDetail(breed)">
+        <div class="card-body p-1  ">
+            <img src="https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg" alt="..." class="img-thumbnail d-inline  ml-2 mr-2 " width="10%">
+           <p class="d-inline text-info">{{breed}}</p>
+          <i class="fa fa-2x mt-1 fa-angle-right float-right mr-2"></i>
+        </div>
+      </div>
+     <ngb-pagination [collectionSize]="AllBreds.length"   [page]="page" (pageChange)="getProduct($event)"></ngb-pagination>
+</div>
+
